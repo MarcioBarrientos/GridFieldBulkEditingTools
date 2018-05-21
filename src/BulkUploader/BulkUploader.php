@@ -332,7 +332,7 @@ class BulkUploader implements GridField_HTMLProvider, GridField_URLHandler
     public function handleBulkUpload($gridField, $request)
     {
        // $gridField->getForm()->getController()->pushCurrent();
-       // $handler = new \Colymba\BulkUpload\BulkUploadHandler($gridField, $this);
+        $handler = new \Colymba\BulkUpload\BulkUploadHandler($gridField, $this);
 
         return $handler->handleRequest($request);
     }
